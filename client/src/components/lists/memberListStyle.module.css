@@ -1,0 +1,103 @@
+.memberList .title{
+    text-align: center;
+}
+
+.memberList .memberBox {
+    line-height: 4vh;
+    font-size: 16px;
+    background-color: #183981;
+    width: 20vw;
+    height: 12vh;
+    margin: 1vw;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border-color: #183981;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 0.3vw;
+}
+
+.navlink {
+    color: #183981;
+    background-color: #f9f9f9;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 1.5px;
+    left: 1.5vw;
+    margin-right: 2vh;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    height: 10px;
+}
+
+.pageMove {
+    color: #f9f9f9;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 70px;
+    height: 40px;
+}
+
+.searchInput {
+    border-radius: 0.313em;
+    width: 200px;
+    height: 21px;
+    padding: 2px;
+    padding-left: 15px;
+    margin-left: 50px;
+}
+
+.searchButton {
+    color: #f9f9f9;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 3px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+}
+
+.pageList {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search {
+    text-align: center;
+}

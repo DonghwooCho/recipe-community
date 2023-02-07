@@ -1,0 +1,82 @@
+.header {
+    background-color: #f3f3f3;
+    position: relative;
+    width: 98vw;
+    height: 10vh;
+    line-height: 10vh;
+    padding-left: 2vw;
+}
+
+.header .wrapper {
+    margin: 0;
+    width: 95vw;
+}
+
+.header .title {
+    display: inline;
+    margin-top: 0;
+    color: #000;
+}
+
+.header .navbar {
+    text-decoration: none;
+}
+
+.header .signUp {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header .signIn {
+    display: inline;
+    float: right;
+    padding-right: 20px;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    right: 0.5vw;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header .signOut {
+    float: right;
+    padding-right: 20px;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}

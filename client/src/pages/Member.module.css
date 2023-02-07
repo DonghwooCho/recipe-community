@@ -1,0 +1,11 @@
+.member {
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-width: 0 0 0.5vh;
+    border-color: #183981;
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+.title {
+    text-align: center;
+}

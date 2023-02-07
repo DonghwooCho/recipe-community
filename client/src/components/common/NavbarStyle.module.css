@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #f3f3f3;
+    display: inline-flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0.3vw 0 0.3vw;
+    border-color: #183981;
+    width: 80vw;
+    height: 5vh;
+    padding: 1vw 10vw;
+}
+
+.navlink {
+    width: 20vw;
+    height: 5vh;
+    line-height: 5vh;
+    color: #183981;
+    font-size: 17px;
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-width: 0 0.1vw 0 0;
+    border-color: #183981;
+    text-align: center;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.navlink:first-child {
+    border-width: 0 0.1vw 0 0.1vw;
+}
+
+.navlink:hover {
+    background-color: #809bd6;
+}

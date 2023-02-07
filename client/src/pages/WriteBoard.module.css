@@ -1,0 +1,114 @@
+.title {
+    width: 70vw;
+    height: 3vh;
+    font-family: 'gmarket';
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.content {
+    width: 70vw;
+    height: 26.3vh;
+    word-wrap: break-word;
+    position: relative;
+    overflow: auto;
+    padding: 5px;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    font-family: 'gmarket';
+    font-size: 18px;
+}
+
+.label {
+    margin-left: 1.5vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.back {
+    margin-bottom: 5vh;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    left: 1.5vw;
+    margin-left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button {
+    margin-bottom: 5vh;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.writeBoard {
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-width: 0 0 0.5vh;
+    border-color: #183981;
+    height: 75vh;
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+.writeBoard::before {
+    top: 19vh;
+    left: 0;
+    width: 100vw;
+    height: 77.2vh;
+    opacity: 0.4;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-image: url('http://energium.kier.re.kr/attach/board/semothy/20211118/1dfa3afced19772e5a1401d3681ed417.jpg');
+}
+
+.upload {
+    display: none;
+}
+
+.uploadLabel {
+    margin-bottom: 5vh;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    left: 1.2vw;
+    margin-right: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}

@@ -1,0 +1,52 @@
+.body {
+    padding: 1vh 3vw 1vh 3vw;
+    width: 100vw;
+    height: 75vh;
+}
+
+.signup {
+    display: inline;
+    color: #fff;
+    margin-top: 4vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+.inputName {
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 16px;
+}
+
+.inputAge {
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 16px;
+}
+.inputId {
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 16px;
+}
+
+.inputPassword {
+    font-size: 16px;
+    width: 500px;
+    height: 30px;
+    padding: 0.3rem 0.5rem;
+}

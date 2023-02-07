@@ -1,0 +1,66 @@
+.divvbox {
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-width: 0 0 0.5vh;
+    border-color: #183981;
+    height: 75vh;
+    padding: 1vh 3vw 1vh 3vw;
+}
+
+.title {
+    background-color: #fff;
+    position: relative;
+    left: 25vw;
+    padding: 0.5vh 0 0.5vh 0.5vw;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 2px;
+    width: 50vw;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.owner {
+    background-color: #fff;
+    position: relative;
+    left: 25vw;
+    padding: 0.5vh 0 0.5vh 0.5vw;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 2px;
+    width: 50vw;
+}
+
+.content {
+    width: 50vw;
+    height: 30vh;
+    font-size: 20px;
+    padding: 0.5vw;
+    background-color: #fff;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 2px;
+    word-wrap: break-word;
+    left: 25vw;
+    position: relative;
+    overflow: auto;
+}
+
+.back {
+    display: inline;
+    padding-right: 20px;
+    color: #fff;
+    margin-top: 1.5vh;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    left: 72vw;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "main-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "env": "^0.0.2",
+    "express": "^4.18.1",
+    "http-status": "^1.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "localStorage": "^1.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0",
+    "url": "^0.11.0",
+    "xrpl": "^2.3.1"
+  }
+}

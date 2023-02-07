@@ -1,0 +1,234 @@
+.productList .title{
+    text-align: center;
+}
+
+.productList .productBox {
+    line-height: 2vh;
+    font-size: 16px;
+    background-color: #183981;
+    width: 90vw;
+    height: 7vh;
+    margin: 1vh 1vw;
+    color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    border-color: #183981;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 0.3vw;
+}
+
+.productList .write {
+    color: #f9f9f9;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    left: 35.7vw;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 50px;
+    height: 1px;
+}
+
+.productList .searchButton {
+    color: #f9f9f9;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 4px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 70px;
+    height: 30px;
+}
+
+.productList .navlink {
+    color: #183981;
+    background-color: #f9f9f9;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 1.5px;
+    left: 1.5vw;
+    margin-right: 2vh;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    height: 10px;
+}
+
+.productList .boardList {
+    color: #183981;
+    background-color: #000000;
+    border-color: #000000;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    border-width: 1.5px;
+    margin: 1vh 1vw;
+    font-weight: 400;
+    width: 60vw;
+    left: 20vw;
+    position: relative;
+}
+
+.productList .navlinkList {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.productList .boardList th, td {
+    font-size: 16px;
+    border: 1px solid #3e3535;
+    padding: 1px;
+}
+
+.productList .boardList td {
+    font-size: 16px;
+    padding: 1px;
+}
+
+.productList th {
+    background-color: #183981;
+    border-color: #183981;
+    color: #f9f9f9;
+    height: 25px;
+}
+
+.productList .th1 {
+    width: 1vw;
+    text-align:center;
+}
+
+.productList .th2 { 
+    width: 15vw;
+    text-align:center;
+}
+
+.productList .th3 {
+    width: 5vw;
+    text-align:center;
+}
+
+.productList .th4 {
+    width: 10vw;
+    text-align:center;
+}
+
+.productList td {
+    border-style: solid;
+    border-color: #183981;
+}
+
+.productList td {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+    line-height: 20px;
+    height: 20px;
+}
+
+.productList .td1 {
+    width:100vw;
+    text-align:center;
+    background-color: #f9f9f9;
+}
+
+.productList .td2 {
+    width:100vw;
+    text-align:center;
+    background-color: #f9f9f9;
+}
+
+.productList .td3 {
+    width:100vw;
+    text-align:center;
+    background-color: #f9f9f9;
+}
+
+.productList .td4 {
+    width:100vw;
+    text-align:center;
+    background-color: #f9f9f9;
+}
+
+hr {
+    margin: 0;
+}
+
+.search {
+    text-align: center;
+    position: relative;
+    left: 7.3vw;
+}
+
+.boardTop {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -630px;
+
+}
+
+.pageMove {
+    color: #f9f9f9;
+    background-color: #183981;
+    border-color: #183981;
+    position: relative;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.313em;
+    border-style: solid;
+    left: 1.5vw;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 70px;
+    height: 40px;
+}
+
+.pageList {
+    margin-top: 20px;
+}
+
+.searchInput {
+    border-radius: 0.313em;
+    width: 170px;
+    height: 20px;
+    padding: 2px;
+    padding-left: 15px;
+}
+
+.navlinkList:hover {
+    background-color: #183981;
+}

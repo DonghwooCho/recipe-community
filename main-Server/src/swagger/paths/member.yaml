@@ -1,0 +1,443 @@
+# 콜론 앞에 있는 것이 key, 값을 쓸 때는 콜론 뒤에 공백 한칸줘야한다.
+# 하위 값들은 공백 2칸을 준다.
+# 파라미터는 요청 시 전달해야 하는 값
+# 파라미터 타입을 정의한 것이 프로퍼티즈
+# 예시는 예시값을 명세에 표시. 상태 코드 별로 하나씩 있으면 좋다.
+# 파라미터에서 - 를 사용해서 같은 파라미터의 프로퍼티임을 구분한다.
+
+/member: 
+  post: 
+    tags: [회원]
+    summary: 모든 회원 목록 조회
+    requestBody:
+      description: 해당 페이지 번호에 해당하는 모든 회원 목록 조회
+      content:
+        application/json:
+          schema: 
+            type: object
+            properties:
+              offset:
+                type: integer
+                example: 0
+              limit:
+                type: integer
+                example: 10
+    responses: 
+      "200":
+        description: 모든 회원 목록
+        content: 
+          application/json:
+            schema: 
+              type: object
+              properties:
+                  status:
+                    type: integer
+                    example: 200
+                  message: 
+                    type: string
+                    example: successfully found all memebers
+                  result:
+                    type: array
+                    example: [{"id":"whehdgn","password":"1234","name":"donghwoo","age":23},{"id":"whehdgn1","password":"1234","name":"donghwo","age":20}]
+#  put:
+#    summary: 회원 비밀번호 변경
+#    tags: [회원]    
+#    parameters:
+#      - name: id
+#        required: true
+#        description: 비밀번호 변경할 회원 아이디
+#        schema:
+#          type: string
+#          sample: whehdgn             
+#    responses:
+#      "200":
+#        description: 회원 비밀번호 변경 내용
+#        content:
+#          application/json: 
+#            schema:
+#              type: string
+#              properties:
+#                status: 
+#                  type: string
+#                  example: 200
+#                message: 
+#                  type: string
+#                  example: successfully updated a memeber
+#  delete:
+#    summary: 회원 삭제
+#    tags: [회원]
+#    parameters:
+#      - name: id
+#        required: true
+#        description: 삭제할 회원 아이디
+#        schema:
+#          type: string
+#          sample: whehdgn
+#    responses:
+#      "200":
+#        description: 회원 삭제 내용
+#        content:
+#          application/json:
+#            schema:
+#              type: string
+#              properties:
+#                status: 
+#                  type: string
+#                  example: 200
+#                message: 
+#                  type: string
+#                  example: successfully deleted a memeber
+/member/search:
+  post:
+    tags: [회원]
+    summary: 아이디로 회원 조회
+    requestBody:
+      description: 조회할 회원 아이디
+      content:
+        application/json:
+          schema: 
+            type: object
+            properties:
+              id:
+                type: string
+                example: whehdgn
+    responses:
+      "200":
+        description: 조회한 회원
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  example: 200
+                message: 
+                  type: string
+                  example: successfully found a memeber by id
+                result:
+                  type: array
+                  example: [{"id":"whehdgn","password":"1234","name":"donghwoo","age":23}]
+/member/signin: 
+  post:
+    tags: [회원]
+    summary: 회원 토큰 발급
+    requestBody:
+      description: 로그인 한 회원 정보
+      content:
+        application/json:
+          schema: 
+            type: object
+            properties:
+              id:
+                type: string
+                example: whehdgn
+              password:
+                type: string
+                example: 1234
+    responses: 
+      "200":
+        description: 토큰 발급 성공
+        content: 
+          application/json:
+            schema:
+              type: object
+              properties:
+                  status:
+                    type: integer
+                    example: 200
+                  message:
+                    type: string
+                    example: successfully sign in
+                  result: 
+                    type: array
+                    items: 
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: whehdgn
+                        password:
+                          type: string
+                          example: 1234
+                        name:
+                          type: string
+                          example: donghwoo
+                        age:
+                          type: integer
+                          example: 23      
+                        accessToken:  
+                          type: string
+                          example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjEwOTc0NjgsImV4cCI6MTY2MTEwMTA2OH0.porXpUhHi6Z5_D6Pcu4aBXYWQJFfKyCBkyVYSkya_-k
+                              
+/member/signup: 
+  post:
+    tags: [회원]
+    summary: 회원가입 한 회원
+    requestBody:
+      description: 회원가입 한 회원 정보 조회
+      content:
+        application/json:
+          schema: 
+            type: object
+            properties:
+              id:
+                type: string
+                example: test1111
+              password:
+                type: string
+                example: 1234
+              name:
+                type: string
+                example: 조동후
+              age:
+                type: integer
+                example: 23
+    responses: 
+      "200":
+        description: 회원 정보 조회 성공
+        content: 
+          application/json:
+            schema:
+              type: object
+              properties:
+                  status:
+                    type: integer
+                    example: 200
+                  message: 
+                    type: string
+                    example: 'successfully inserted a member'
+                  result:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: test1135
+                      password:
+                        type: string
+                        example: 1234
+                      name:
+                        type: string
+                        example: 조동후
+                      age:
+                        type: integer
+                        example: 23                      
+#      "401":
+#        description: 회원 정보 조회 실패
+#        content: 
+#          application/json:
+#            schema:
+#              type: object
+#              properties:
+#                  status:
+#                    type: integer
+#                    example: 401
+#                  message: 
+#                    type: string
+#                    example: 'fail inserted a member'
+/auth:
+  get: 
+    tags: [인증]
+    summary: 인증한 회원 정보
+    parameters: 
+      - name: accessToken
+        in: header
+        required: false
+        description: 인증 accessToken
+        schema: 
+          type: string
+    responses:
+      "200":
+        description: 인증 성공
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  example: true
+                message:
+                  type: string
+                  example: 로그인 인증 성공
+      "401":
+        description: 인증 실패
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                success:
+                  type: boolean
+                  example: false
+                message:
+                  type: string
+                  example: 로그인 정보가 없습니다.
+/product:
+  get:
+    tags: [게시판]
+    summary: 게시판 정보
+    responses:
+      "200":
+        description: 게시물 조회 성공
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  example: 200
+                message:
+                  type: string
+                  example: successfully found all products
+                results:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      boardTitle:
+                        type: string
+                        example: 고맙습니다 감사합니다 수고하세요
+                      boardContent:
+                        type: string
+                        example: korea
+                      boardOwner:
+                        type: string
+                        example: whehdgn3
+                      boardDate:
+                        type: string
+                        example: 22-07-13
+/product/{boardCode}:
+  get:
+    tags: [게시판]
+    summary: 게시판 정보
+    parameters: 
+      - name: boardCode
+        in: path
+        required: true
+        description: 페이지 번호
+        schema: 
+          type: string
+    responses:
+      "200":
+        description: 게시물 조회 성공
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  example: 200
+                message:
+                  type: string
+                  example: successfully found all products
+                results:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      boardTitle:
+                        type: string
+                        example: 고맙습니다 감사합니다 수고하세요
+                      boardContent:
+                        type: string
+                        example: korea
+                      boardOwner:
+                        type: string
+                        example: whehdgn3
+                      boardDate:
+                        type: string
+                        example: 22-07-13
+/product/search:
+  post:
+    tags: [게시판]
+    summary: 검색한 게시판 조회
+    requestBody:
+      description: 검색할 게시판 제목
+      content:
+        application/json:
+          schema: 
+            type: object
+            properties:
+              title:
+                type: string
+                example: 인사
+    responses:
+      "200":
+        description: 검색한 게시물 조회 성공
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  example: 200
+                message:
+                  type: string
+                  example: successfully found search products
+                results:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      boardTitle:
+                        type: string
+                        example: 안녕하세요 가입 인사 드려요~
+                      boardContent:
+                        type: string
+                        example: korea
+                      boardOwner:
+                        type: string
+                        example: whehdgn   
+                      boardDate:
+                        type: hello world
+                        example: 22-06-26
+/product/write:
+  post:
+    tags: [게시판]
+    summary: 작성한 게시판 등록
+    requestBody:
+      description: 작성한 게시판 정보
+      content:
+        application/json:
+          schema: 
+            type: object
+            properties:
+              boardTitle:
+                type: string
+                example: 테스트입니다.
+              boardContent:
+                type: string
+                example: 마이크 테스트 하나 둘 셋 셋 둘 하나 잘 들리십니까?
+              boardOwner:
+                type: object
+                properties: 
+                  id:
+                    type: string
+                    example: whehdgn1001
+                  password:
+                    type: string
+                    example: 9999
+                  name:
+                    type: string
+                    example: donghwoocho
+                  age: 
+                    type: integer
+                    example: 22
+    responses:
+      "200":
+        description: 작성한 게시물 등록 성공
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: integer
+                  example: 200
+                message:
+                  type: string
+                  example: successfully inserted a product
