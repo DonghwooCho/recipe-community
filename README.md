@@ -13,12 +13,8 @@
 ![image](https://user-images.githubusercontent.com/67030031/217398863-1886178b-7f0f-4e1a-b780-39f583764c0b.png)
 
 ## 🍔프로젝트 결과물 화면
-<details>
-  <div markdown="1">
 ![image](https://user-images.githubusercontent.com/67030031/217399959-bb7f967a-4c26-4d59-9dae-736db8417863.png)
 ![image](https://user-images.githubusercontent.com/67030031/217400103-e91c54a5-e670-44d5-bc16-723932418c18.png)
 ![image](https://user-images.githubusercontent.com/67030031/217400432-b30559f2-a684-4001-a836-a34a98320cc1.png)
 ![image](https://user-images.githubusercontent.com/67030031/217400521-49e21152-b6b0-443c-b37f-8c219aeb9538.png)
 ![image](https://user-images.githubusercontent.com/67030031/217400800-b1d2f26c-9587-4a10-9e6a-75915764c0e2.png)
-  </div>
-</details>
